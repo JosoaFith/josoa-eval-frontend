@@ -1,0 +1,7 @@
+@use '_var' as v;
+@use '_class' as c;
+
+#filter {
+    @extend .flex;
+    justify-content: space-between;
+}

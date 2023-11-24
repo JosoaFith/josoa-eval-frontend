@@ -1,0 +1,59 @@
+@use '_var' as v;
+
+.container {
+    width: v.$container-size;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#menu {
+    color: v.$primary-color;
+    background: rgba($color: #000000, $alpha: 0);
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    right: 15px;
+    height: 40px;
+    padding: 2px 5px 5px;
+    transition: all .5s;
+    z-index: 5;
+    cursor: pointer;
+    border: 2px v.$primary-color solid;
+    border-radius: 5px;
+}
+#menu:hover {
+    transform: scale(1.05);
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    margin: 5px 0;
+    transition: .4s;
+    border-radius: 2px;
+}
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}

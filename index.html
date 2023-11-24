@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à bord</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- Menu burger -->
+        <div id="menu" class="" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+            <div class="container">
+                <h1>Bienvenue à bord</h1>
+                <p>Location de voiture 24h/24 et 7j/7</p>
+            </div>
+            <div class="container">
+                <form action="" id="search-bar">
+                    <div>
+                        <select name="address" id="address">
+                            <option value="">Adresse de départ</option>
+                            <option value="grenoble">Grenoble</option>
+                            <option value="lyon">Lyon</option>
+                            <option value="paris">Paris</option>
+                            <option value="marseille">Marseille</option>
+                        </select>
+                    
+                        <input type="date" name="start-date" id="start-date" placeholder="Début de location">
+                        <input type="date" name="end-date" id="end-date" placeholder="Fin de location">
+                    </div>
+                    
+                    <div>
+                        <input type="submit" value="Valider ma recherche">
+                    </div>
+                </form>
+            </div>
+
+    </header>
+
+    <main class="container">
+
+        <!-- Filtre -->
+        <div id="filter">
+            <p>7 résultats</p>
+            <select>
+                <option value="">Prix croissant</option>
+                <option value="">Prix décroissant</option>
+            </select>
+        </div>
+
+        <!-- Liste de voiture -->
+        <ul>
+            <li>
+                <div>
+                    <img src="images/vehicule1.png" alt="vehicule">
+                    <!-- arrows -->
+
+                </div>
+                <div>
+                    <h4>Peugeot 208</h4>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km(0,5/km supplémentaire).</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button>Réserver et Payer</button>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+
+    <footer class="container">
+        <img src="images/agence.jpg" alt="agence" width="100">
+        <div>
+            <p>Notre Agence de <span>Paris</span></p>
+            <p>300 boulevar de vaugirard, 75015, Paris</p>
+            <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+            <p>01 49 78 21 33</p>
+            <p>contact@vtc.com</p>
+        </div>
+
+    </footer>
+</body>
+</html>

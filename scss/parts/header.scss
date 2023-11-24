@@ -1,0 +1,52 @@
+@use '../_var' as v;
+@use '../class' as c;
+
+header {
+    width: 100vw;
+    height: 65vh;
+    background: v.$header-bg no-repeat;
+    background-size: cover;
+    color: v.$primary-color;
+    @extend .flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    & > div:nth-of-type(2) {
+        @extend .flex;
+        flex-direction: column;
+        @extend .align-center;
+        margin: 1rem;
+    }
+    & > div:nth-of-type(3) {
+        @extend .flex;
+        @extend .justify-center;
+        @extend .w-100;
+    }
+}
+
+#search-bar {
+    @extend .flex;
+    width: 65vw;
+    div:first-of-type {
+        background: rgba($color: #ffffff, $alpha: .5);
+        width: 75%;
+        padding: 5px;
+        select, input {
+            margin-right: 20px;
+            width: 28%;
+            height: 35px;
+            padding: 0 5px;
+        } 
+    }
+    div:last-of-type {
+        width: 25%;
+        input {
+            width: 100%;
+            height: 100%;
+            background: rgba($color:  #59b459, $alpha: .5);
+            color: v.$primary-color;
+            border: 0;
+        }
+    }
+}
+

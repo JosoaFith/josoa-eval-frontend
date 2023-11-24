@@ -1,0 +1,13 @@
+@use 'parts/header';
+@use 'parts/main';
+@use 'parts/footer';
+@use '_var' as v;
+@use '_class' as c;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
