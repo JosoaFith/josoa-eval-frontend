@@ -1,7 +1,35 @@
-@use '_var' as v;
-@use '_class' as c;
+@use '../_var' as v;
+@use '../_class' as c;
 
 #filter {
     @extend .flex;
     justify-content: space-between;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+.car-item {
+    padding: 20px 0 40px;
+    border-bottom: 2px rgb(173, 173, 173) solid;
+}
+
+.illustration {
+    align-items: center;
+}
+
+.car-about {
+    margin: 0 4rem;
+    h4 {
+        font-size: 2rem;
+    }
+    button {
+        width: 200px;
+        height: 40px;
+        margin: 10px;
+        background: v.$secondary-color;
+        color: v.$primary-color;
+        border: 0;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
 }

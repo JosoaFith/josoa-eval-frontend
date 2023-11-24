@@ -74,6 +74,13 @@ header > div:nth-of-type(2) {
   flex-direction: column;
   margin: 1rem;
 }
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  font-size: 1rem;
+}
+
 #search-bar {
   width: 65vw;
 }
@@ -94,7 +101,7 @@ header > div:nth-of-type(2) {
 #search-bar div:last-of-type input {
   width: 100%;
   height: 100%;
-  background: rgba(89, 180, 89, 0.5);
+  background: rgba(89, 180, 89, 0.7);
   color: #fff;
   border: 0;
 }
