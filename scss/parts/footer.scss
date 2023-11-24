@@ -1,0 +1,12 @@
+@use '../_class' as c;
+
+footer img {
+    width: 100px;
+}
+
+footer {
+    padding: 30px;
+    div {
+        margin: 0 30px;
+    }
+}

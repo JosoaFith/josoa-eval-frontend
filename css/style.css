@@ -106,6 +106,10 @@ header p {
   border: 0;
 }
 
+main {
+  padding: 0 20px;
+}
+
 #filter {
   justify-content: space-between;
   padding: 20px 0;
@@ -138,6 +142,33 @@ header p {
   font-size: 1rem;
 }
 
+footer img {
+  width: 100px;
+}
+
+footer {
+  padding: 30px;
+}
+footer div {
+  margin: 0 30px;
+}
+
+@keyframes anim-nav {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes anim-nav-reverse {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -148,4 +179,20 @@ header p {
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+#primary-nav {
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  top: -50%;
 }
