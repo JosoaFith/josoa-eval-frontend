@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="location de voiture">
     <title>Bienvenue à bord</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/018b5678f1.js" crossorigin="anonymous"></script>
@@ -11,61 +12,59 @@
     
     <header>
         <!-- Menu burger -->
-        <div id="menu" onclick="myFunction(this)" >
+        <div id="menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-            <div class="container">
-                <h1>Bienvenue à bord</h1>
-                <p>Location de voiture 24h/24 et 7j/7</p>
-            </div>
-            <div class="container">
-                <form action="" id="search-bar">
-                    <div>
-                        <select name="address" id="address">
-                            <option value="">Adresse de départ</option>
-                            <option value="grenoble">Grenoble</option>
-                            <option value="lyon">Lyon</option>
-                            <option value="paris">Paris</option>
-                            <option value="marseille">Marseille</option>
-                        </select>
-                    
-                        <input type="date" name="start-date" id="start-date" placeholder="Début de location">
-                        <input type="date" name="end-date" id="end-date" placeholder="Fin de location">
-                    </div>
-                    
-                    <div>
-                        <input type="submit" value="Valider ma recherche">
-                    </div>
-                </form>
-            </div>
-
-
-            <nav id="primary-nav">
-                <ul>
-                    <li><a href="#">Louer une voiture</a></li>
-                    <li><a href="#">Louer un utilitaire</a></li>
-                    <li><a href="#">Réserver un chauffeur</a></li>
-                    <li><a href="#">Découvrer nos agences</a></li>
-                    <li><a href="#">Mon compte</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
+        <div class="container">
+            <h1>Bienvenue à bord</h1>
+            <p>Location de voiture 24h/24 et 7j/7</p>
+        </div>
+        <div class="container">
+            <form action="#" method="post" id="search-bar">
+                <div>
+                    <select name="address" id="address">
+                        <option value="">Adresse de départ</option>
+                        <option value="grenoble">Grenoble</option>
+                        <option value="lyon">Lyon</option>
+                        <option value="paris">Paris</option>
+                        <option value="marseille">Marseille</option>
+                    </select>
+                    <input type="date" name="start-date" id="start-date" placeholder="Début de location">
+                    <input type="date" name="end-date" id="end-date" placeholder="Fin de location">
+                </div>
+    
+                <div>
+                    <input type="submit" value="Valider ma recherche">
+                </div>
+            </form>
+        </div>   
+        <!-- Navigation -->
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#">Louer une voiture</a></li>
+                <li><a href="#">Louer un utilitaire</a></li>
+                <li><a href="#">Réserver un chauffeur</a></li>
+                <li><a href="#">Découvrer nos agences</a></li>
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>   
     </header>
 
     <main class="container">
-
         <!-- Filtre -->
         <div id="filter">
             <div>
 
             </div>
-            <select>
-                <option value="">Prix croissant</option>
-                <option value="">Prix décroissant</option>
-            </select>
+            <form action="#" method="post">
+                <select>
+                    <option value="">Prix croissant</option>
+                    <option value="">Prix décroissant</option>
+                </select>
+            </form>
         </div>
 
         <!-- Liste de voiture -->

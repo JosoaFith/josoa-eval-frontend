@@ -147,7 +147,7 @@ for(let i = 0;i < vehicules.length;i++) {
                         <i class="fa-solid fa-circle-chevron-right fa-2x arrow-right"></i>
                     </div>
                     <div class="car-about">
-                        <h4>${vehicules[i].model}</h4>
+                        <h3>${vehicules[i].model}</h3>
                         <p>${vehicules[i].description}</p>
                         <p>${vehicules[i].price} € - Agence de ${vehicules[i].agence}</p>
                         <button>Réserver et Payer</button>
@@ -157,18 +157,14 @@ for(let i = 0;i < vehicules.length;i++) {
 
 }
 
-function myFunction(x) {
-    x.classList.toggle("change");
-}
-
 const btMenu = document.getElementById('menu');
 const navigation = document.querySelector('#primary-nav');
 
-const fctSideMenu = () => {
+const fctNav = () => {
     // ***** FLAG ******
     let i = 0;
     btMenu.addEventListener('click', (e) => {
-        
+        btMenu.classList.toggle("change");
         if(i == 0){
             navigation.style.animation = "anim-nav 1s forwards";
             i = 1;                 
@@ -178,4 +174,6 @@ const fctSideMenu = () => {
         }         
     });
 }
+
+fctNav();
 

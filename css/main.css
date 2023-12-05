@@ -24,12 +24,12 @@
   background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 10px;
-  width: 50px;
+  width: 40px;
   right: 15px;
   height: 40px;
   padding: 2px 5px 5px;
   transition: all 0.5s;
-  z-index: 5;
+  z-index: 10;
   cursor: pointer;
   border: 2px #fff solid;
   border-radius: 5px;
@@ -40,7 +40,7 @@
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
+  width: 25px;
   height: 4px;
   background: #fff;
   margin: 5px 0;
@@ -49,7 +49,8 @@
 }
 
 .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 9px) rotate(-45deg);
+  background: #000000;
 }
 
 .change .bar2 {
@@ -57,11 +58,12 @@
 }
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -9px) rotate(45deg);
+  background: #000000;
 }
 
 main {
-  padding: 0 20px;
+  margin: 0 30px;
 }
 
 #filter {
@@ -72,17 +74,30 @@ main {
 
 .car-item {
   padding: 20px 0 40px;
-  border-bottom: 2px rgb(173, 173, 173) solid;
+  border-bottom: 2px rgb(240, 240, 240) solid;
+}
+
+i {
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .illustration {
   align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+.illustration:hover i {
+  opacity: 0.7;
+}
+.illustration:hover i:hover {
+  transform: scale(1.05);
 }
 
 .car-about {
-  margin: 0 4rem;
+  padding: 0 4rem;
 }
-.car-about h4 {
+.car-about h3 {
   font-size: 2rem;
 }
 .car-about button {
@@ -94,4 +109,8 @@ main {
   border: 0;
   border-radius: 10px;
   font-size: 1rem;
+  transition: all 0.5s;
+}
+.car-about button:hover {
+  transform: scale(1.02);
 }

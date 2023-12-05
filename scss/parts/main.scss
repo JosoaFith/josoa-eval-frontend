@@ -3,7 +3,7 @@
 
 
 main {
-    padding: 0 20px;
+    margin: 0 30px;
 }
 
 #filter {
@@ -15,16 +15,32 @@ main {
 
 .car-item {
     padding: 20px 0 40px;
-    border-bottom: 2px rgb(173, 173, 173) solid;
+    border-bottom: 2px rgb(240, 240, 240) solid;
+}
+
+i {
+    opacity: 0;
+    transition: all .5s;
 }
 
 .illustration {
     align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    &:hover {
+        i {
+            opacity: .7;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
 }
 
+
 .car-about {
-    margin: 0 4rem;
-    h4 {
+    padding: 0 4rem;
+    h3 {
         font-size: 2rem;
     }
     button {
@@ -36,5 +52,9 @@ main {
         border: 0;
         border-radius: 10px;
         font-size: 1rem;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.02);
+        }
     }
 }
